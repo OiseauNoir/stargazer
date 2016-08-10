@@ -18,5 +18,6 @@ $(document).ready(function() {
 });
 
 function logResults(json){
-  console.log('it ran', json);
+  console.log(json);
+  $('#preview').html('<img src="' + json.image.src + '">')
 }
